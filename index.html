@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Button</title>
+    <style>
+        body {
+            background-color: #e91e63; /* Dark pink background */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffffff; /* White background for the button */
+            color: #e91e63; /* Dark pink text color */
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+            animation: bounce 1s infinite; /* Add bounce animation */
+        }
+
+        button:hover {
+            background-color: #f8f8f8; /* Light grey background on hover */
+            transform: scale(1.1); /* Slightly enlarge the button on hover */
+        }
+
+        /* Keyframes for bounce animation */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="main.html"><button>Click</button></a>
+    </div>
+</body>
+</html>
